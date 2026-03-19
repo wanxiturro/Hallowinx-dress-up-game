@@ -1,0 +1,40 @@
+# Godot 4+ specific ignores
+.godot/
+*.import
+*.translation
+*.uid
+
+# Export files
+exports/
+*.apk
+*.aab
+*.exe
+*.dmg
+*.pck
+*.zip
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.bak
+*.log
+
+# Editor data (optional - uncomment if you want to ignore)
+# .vscode/
+# .idea/
+
+# User-specific Godot settings (DO NOT ignore if working in team)
+# editor_settings-3.tres
+# editor_settings-4.tres
+
+# Imported assets (generated files)
+.import/
+
+# Cache files
+*.tmp
+*.temp
