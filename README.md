@@ -1,7 +1,7 @@
 # 👗 HALLOWINX DRESS-UP 🧙‍♀️
 
 <p align="center">
-  <img src="icon.png" alt="Hallowinx Dress-up Logo" width="200"/>
+  <img src="assets/sprites/logo.png" alt="Hallowinx Dress-up Logo" width="200"/>
 </p>
 
 <p align="center">
