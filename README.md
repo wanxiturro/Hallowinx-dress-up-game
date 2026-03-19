@@ -1,23 +1,13 @@
 <div align="center">
   <img src="assets/sprites/logo.png" alt="Hallowinx Dress-up Logo" width="200"/>
 
-  # 👗 HALLOWINX DRESS-UP 🧙‍♀️
+  # HALLOWINX DRESS-UP 
   
   Un juego de vestir mágico y encantador.
 
   ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20PC-lightgrey)
   ![Godot](https://img.shields.io/badge/Godot-4.2-blue?logo=godot)
 </div>
-
-
-<p align="center">
-  <a href="#-descripción">Descripción</a> •
-  <a href="#-características">Características</a> •
-  <a href="#-cómo-jugar">Cómo jugar</a> •
-  <a href="#-capturas">Capturas</a> •
-  <a href="#-instalación">Instalación</a> •
-  <a href="#-desarrollo">Desarrollo</a>
-</p>
 
 ---
 
