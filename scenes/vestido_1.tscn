@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c07jmoajrmugq"]
+
+[ext_resource type="Texture2D" uid="uid://cw1cnkdx8ckuj" path="res://assets/sprites/vestido_1.png" id="1_ahdao"]
+[ext_resource type="Script" path="res://scripts/drag_and_rope.tscn.gd" id="2_g7yfh"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_ahdao")
+script = ExtResource("2_g7yfh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" groups=["clothing"]]
+polygon = PackedVector2Array(-93, -108, -79, -58, -72, -52, -38, -103, -18, -100, -36, -81, 1, -68, 14, -96, 45, -86, 55, -46, 63, 2, 67, 12, 80, 23, 89, 45, 102, 72, 104, 79, 130, 97, 122, 103, 119, 109, 112, 110, 109, 114, 98, 113, 88, 111, 90, 100, 91, 84, 78, 64, 67, 48, 54, 32, 53, 22, 46, -1, 33, -31, 21, -51, 19, -49, 13, -44, 0, -33, -13, -25, -20, -4, 3, 5, 33, 26, 31, 39, 62, 80, 63, 90, 53, 98, 25, 112, 2, 116, -13, 111, -29, 109, -51, 117, -68, 112, -90, 101, -102, 91, -96, 76, -80, 49, -83, 37, -65, 24, -57, 13, -46, -2, -54, -41, -69, -23, -82, -16, -95, -42, -102, -75, -107, -108)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

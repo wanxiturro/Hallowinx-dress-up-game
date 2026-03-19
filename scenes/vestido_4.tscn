@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn8ls17mj8o2k"]
+
+[ext_resource type="Texture2D" uid="uid://bdqy3fd8fxk0y" path="res://assets/sprites/Vestidos.png" id="1_mhbab"]
+[ext_resource type="Script" path="res://scripts/drag_and_rope.tscn.gd" id="1_q8d0d"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_mhbab")
+region_enabled = true
+region_rect = Rect2(799.1, 5.09998, 269.5, 281.6)
+script = ExtResource("1_q8d0d")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" groups=["clothing"]]
+position = Vector2(26, 13)
+polygon = PackedVector2Array(-43, -109, -48, -113, -57, -121, -69, -114, -79, -98, -83, -84, -91, -73, -81, -68, -81, -49, -75, -20, -75, -9, -88, 6, -98, 27, -101, 47, -107, 62, -121, 56, -128, 63, -129, 80, -122, 90, -113, 87, -112, 94, -105, 102, -91, 103, -80, 104, -59, 109, -43, 109, -24, 106, -15, 101, 2, 94, 18, 83, 31, 73, 38, 59, 34, 40, 19, 36, 4, 26, -17, 3, -43, -11, -43, -24, -40, -34, -21, -48, -8, -63, 1, -45, 12, -53, 28, -53, 23, -68, 22, -83, 19, -97, 16, -106, 9, -106, -3, -99, -8, -101, -19, -90, -28, -76, -60, -87, -52, -99)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

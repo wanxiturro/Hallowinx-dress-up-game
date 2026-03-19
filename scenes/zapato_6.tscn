@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpn6b5c3hpwtc"]
+
+[ext_resource type="Texture2D" uid="uid://dm3qysgadu47o" path="res://assets/sprites/zapatos.png" id="1_ciqyd"]
+[ext_resource type="Script" path="res://scripts/drag_and_rope.tscn.gd" id="1_x0q36"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_ciqyd")
+region_enabled = true
+region_rect = Rect2(1120.2, 6.20012, 196.9, 303.6)
+script = ExtResource("1_x0q36")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" groups=["clothing"]]
+position = Vector2(26, 13)
+polygon = PackedVector2Array(-93, -139, -91, -135, -81, -132, -68, -133, -63, -138, -65, -144, -59, -149, -53, -157, -56, -159, -47, -155, -33, -146, -23, -139, -17, -127, -11, -102, -7, -73, -2, -50, 7, -20, 17, -13, 29, -13, 36, -12, 38, -7, 53, 21, 68, 43, 65, 46, 41, 18, 37, 15, 37, 21, 43, 38, 46, 45, 52, 56, 49, 61, 38, 71, 22, 77, 13, 69, 9, 67, 6, 64, 12, 49, 11, 44, 12, 43, 7, 36, 1, 24, -5, 21, -6, 15, -5, 12, -8, -3, -21, -40, -33, -63, -49, -91, -54, -98, -54, -89, -58, -73, -66, -49, -80, -15, -92, 23, -95, 38, -89, 63, -79, 90, -75, 100, -76, 115, -87, 133, -106, 120, -112, 107, -113, 95, -113, 63, -118, 41, -112, 21, -104, -18, -102, -53, -102, -81, -103, -97, -102, -107, -98, -125)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,0 +1,469 @@
+[gd_scene load_steps=19 format=3 uid="uid://bg2bldxuyq5vg"]
+
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_5ve74"]
+[ext_resource type="Texture2D" uid="uid://mvrhbgn5kuqp" path="res://assets/sprites/background.png" id="1_lmvlm"]
+[ext_resource type="Texture2D" uid="uid://dyctj1mrrrasg" path="res://assets/sprites/background_level.png" id="2_6il0v"]
+[ext_resource type="Texture2D" uid="uid://h6snw53oebcw" path="res://assets/sprites/skins.png" id="3_bruks"]
+[ext_resource type="Texture2D" uid="uid://5wfkn8t8xcxf" path="res://assets/sprites/pelos.png" id="4_k78dj"]
+[ext_resource type="PackedScene" uid="uid://cohtc0mhrlk4r" path="res://scenes/vestidos.tscn" id="4_tmn6e"]
+[ext_resource type="Texture2D" uid="uid://cvlqr21akvojt" path="res://assets/sprites/ojos_cejas.png" id="6_65mhj"]
+[ext_resource type="Texture2D" uid="uid://66jbdpgosepb" path="res://assets/sprites/labios.png" id="7_s063a"]
+[ext_resource type="PackedScene" uid="uid://b31hvme4esbrp" path="res://scenes/zapatos.tscn" id="8_a33sv"]
+[ext_resource type="PackedScene" uid="uid://cyd5c3ltexxv3" path="res://scenes/medias.tscn" id="8_bel3o"]
+[ext_resource type="Texture2D" uid="uid://bofcui3rcr6ex" path="res://assets/ui/buttom_pelo.png" id="8_o02fu"]
+[ext_resource type="Texture2D" uid="uid://b0320ln5ap2si" path="res://assets/ui/skins_button.png" id="9_ctx25"]
+[ext_resource type="Texture2D" uid="uid://c2cse8kdnplqp" path="res://assets/ui/buttom_vestidos.png" id="10_xgd5y"]
+[ext_resource type="Texture2D" uid="uid://wmuveek5we8n" path="res://assets/ui/medias_buttom.png" id="11_jyamr"]
+[ext_resource type="Texture2D" uid="uid://ttkt8vs3rc8t" path="res://assets/ui/zapatos_buttom.png" id="12_wv7hn"]
+[ext_resource type="Texture2D" uid="uid://6hbllwtdg121" path="res://assets/ui/buttom_ojos.png" id="13_bdtww"]
+[ext_resource type="Texture2D" uid="uid://cr32nlb0an0w7" path="res://assets/ui/buttom_cejas.png" id="14_5p7np"]
+[ext_resource type="Texture2D" uid="uid://d0tdj3mk73ho2" path="res://assets/ui/buttom_labios.png" id="15_75kku"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_5ve74")
+
+[node name="Fondo" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -646.0
+offset_top = -1376.0
+offset_right = 670.0
+offset_bottom = 1282.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lmvlm")
+
+[node name="Fondo2" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -538.0
+offset_top = 584.0
+offset_right = 539.0
+offset_bottom = 1200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6il0v")
+
+[node name="pelos_back" type="Node2D" parent="."]
+position = Vector2(2.125, -257.149)
+scale = Vector2(2.15099, 2.15099)
+
+[node name="pelo_1" type="Sprite2D" parent="pelos_back"]
+visible = false
+position = Vector2(-51.1974, -307.696)
+scale = Vector2(0.973726, 0.973726)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(-3.29907, 5.65793, 93.5, 133.421)
+
+[node name="pelo_2" type="Sprite2D" parent="pelos_back"]
+visible = false
+position = Vector2(42.248, -294.214)
+scale = Vector2(0.952692, 0.952692)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(97.001, 6.44534, 41.8, 135.52)
+
+[node name="pelo_3" type="Sprite2D" parent="pelos_back"]
+visible = false
+position = Vector2(-63.2848, -194.26)
+scale = Vector2(0.796112, 0.796112)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(349.9, 6.60448, 313.5, 226.27)
+
+[node name="pelo_4" type="Sprite2D" parent="pelos_back"]
+visible = false
+position = Vector2(-13.5403, -151.954)
+scale = Vector2(1.13963, 1.13963)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(824.314, 7.83842, 212.587, 248.05)
+
+[node name="pelo_5" type="Sprite2D" parent="pelos_back"]
+visible = false
+position = Vector2(8.77503, -277.477)
+scale = Vector2(0.979788, 0.979788)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(1034.79, 3.59638, 92.5172, 116.733)
+
+[node name="pelo_6" type="Sprite2D" parent="pelos_back"]
+visible = false
+position = Vector2(-13.5403, -148.235)
+scale = Vector2(0.979788, 0.979788)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(145.7, 6.37838, 201.3, 363)
+
+[node name="pelo_7" type="Sprite2D" parent="pelos_back"]
+position = Vector2(-9.35616, -313.275)
+scale = Vector2(0.979788, 0.979788)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(666.848, 4.52548, 149.642, 178.825)
+
+[node name="skins" type="Node2D" parent="."]
+
+[node name="skin_1" type="Sprite2D" parent="skins"]
+texture_filter = 1
+position = Vector2(2.125, -257.149)
+scale = Vector2(2.15099, 2.15099)
+texture = ExtResource("3_bruks")
+hframes = 6
+
+[node name="skin_2" type="Sprite2D" parent="skins"]
+visible = false
+texture_filter = 1
+position = Vector2(-15, -248.384)
+scale = Vector2(2.15488, 2.15488)
+texture = ExtResource("3_bruks")
+region_enabled = true
+region_rect = Rect2(299.285, 11.3051, 297.213, 731.474)
+
+[node name="skin_3" type="Sprite2D" parent="skins"]
+visible = false
+texture_filter = 1
+position = Vector2(-15, -248.384)
+scale = Vector2(2.15488, 2.15488)
+texture = ExtResource("3_bruks")
+region_enabled = true
+region_rect = Rect2(602.466, 12.8767, 300.103, 728.821)
+
+[node name="skin_4" type="Sprite2D" parent="skins"]
+visible = false
+texture_filter = 1
+position = Vector2(-12, -248.384)
+scale = Vector2(2.15488, 2.15488)
+texture = ExtResource("3_bruks")
+region_enabled = true
+region_rect = Rect2(908.999, 17.1638, 295.816, 720.247)
+
+[node name="skin_5" type="Sprite2D" parent="skins"]
+visible = false
+texture_filter = 1
+position = Vector2(-22, -247.384)
+scale = Vector2(2.15488, 2.15488)
+texture = ExtResource("3_bruks")
+region_enabled = true
+region_rect = Rect2(1211.25, 17.1638, 291.528, 720.247)
+
+[node name="skin_6" type="Sprite2D" parent="skins"]
+visible = false
+texture_filter = 1
+position = Vector2(-14, -247.384)
+scale = Vector2(2.15488, 2.15488)
+texture = ExtResource("3_bruks")
+region_enabled = true
+region_rect = Rect2(1513.49, 17.1638, 302.246, 720.247)
+
+[node name="pelos_front" type="Node2D" parent="."]
+position = Vector2(2.125, -257.149)
+scale = Vector2(2.15099, 2.15099)
+
+[node name="pelo_1" type="Sprite2D" parent="pelos_front"]
+visible = false
+position = Vector2(11.5644, -322.108)
+scale = Vector2(0.973726, 0.973726)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(1.69995, 413.647, 95.7, 78.1001)
+
+[node name="pelo_2" type="Sprite2D" parent="pelos_front"]
+visible = false
+position = Vector2(0.871692, -300.723)
+scale = Vector2(0.968412, 0.968412)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(100.905, 408.546, 145.2, 126.5)
+
+[node name="pelo_3" type="Sprite2D" parent="pelos_front"]
+visible = false
+position = Vector2(18.0731, -311.88)
+scale = Vector2(0.959131, 0.959131)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(250.032, 403.857, 127.776, 123.353)
+
+[node name="pelo_4" type="Sprite2D" parent="pelos_front"]
+visible = false
+position = Vector2(11.6933, -332.202)
+scale = Vector2(1.00595, 1.00595)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(375.158, 405.511, 119.217, 89.5066)
+
+[node name="pelo_5" type="Sprite2D" parent="pelos_front"]
+visible = false
+position = Vector2(19.2874, -309.323)
+scale = Vector2(0.926085, 0.926085)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(504.024, 407.605, 125.957, 126.845)
+
+[node name="pelo_6" type="Sprite2D" parent="pelos_front"]
+visible = false
+position = Vector2(19.9327, -307.696)
+scale = Vector2(0.993059, 0.993059)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(647.396, 403.79, 134.94, 129.543)
+
+[node name="pelo_7" type="Sprite2D" parent="pelos_front"]
+position = Vector2(6.91542, -330.011)
+scale = Vector2(0.993059, 0.993059)
+texture = ExtResource("4_k78dj")
+region_enabled = true
+region_rect = Rect2(796.398, 412.957, 105.253, 84.8196)
+
+[node name="ojos" type="Node2D" parent="."]
+position = Vector2(2.125, -257.149)
+scale = Vector2(2.15099, 2.15099)
+
+[node name="ojos_1" type="Sprite2D" parent="ojos"]
+position = Vector2(24.5817, -288.635)
+scale = Vector2(0.835339, 0.835339)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(15.7399, 22.8395, 90.7501, 61.7101)
+
+[node name="ojos_2" type="Sprite2D" parent="ojos"]
+visible = false
+position = Vector2(25.407, -283.475)
+scale = Vector2(0.852087, 0.852087)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(112.085, 22.8395, 68.6268, 61.7101)
+
+[node name="ojos_3" type="Sprite2D" parent="ojos"]
+visible = false
+position = Vector2(24.5817, -285.846)
+scale = Vector2(0.835339, 0.835339)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(193.264, 22.8395, 74.0244, 61.7101)
+
+[node name="ojos_4" type="Sprite2D" parent="ojos"]
+visible = false
+position = Vector2(24.5817, -288.17)
+scale = Vector2(0.835339, 0.835339)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(280.752, 22.8395, 71.7671, 61.7101)
+
+[node name="ojos_5" type="Sprite2D" parent="ojos"]
+visible = false
+position = Vector2(25.0466, -282.591)
+scale = Vector2(0.835339, 0.835339)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(365.692, 22.8395, 68.2412, 61.7101)
+
+[node name="ojos_6" type="Sprite2D" parent="ojos"]
+visible = false
+position = Vector2(25.5115, -290.495)
+scale = Vector2(0.835339, 0.835339)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(443.776, 30.6925, 78.2653, 37.3977)
+
+[node name="labios" type="Node2D" parent="."]
+position = Vector2(-542, -49)
+
+[node name="labios_1" type="Sprite2D" parent="labios"]
+position = Vector2(604, -766)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_s063a")
+region_enabled = true
+region_rect = Rect2(23.307, 8.81919, 32.7712, 31.1808)
+
+[node name="labios_2" type="Sprite2D" parent="labios"]
+visible = false
+position = Vector2(597, -764)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_s063a")
+region_enabled = true
+region_rect = Rect2(64.1746, 8.81919, 29.6869, 31.1808)
+
+[node name="labios_3" type="Sprite2D" parent="labios"]
+visible = false
+position = Vector2(599, -766)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_s063a")
+region_enabled = true
+region_rect = Rect2(105.428, 8.81919, 26.217, 31.1808)
+
+[node name="labios_4" type="Sprite2D" parent="labios"]
+visible = false
+position = Vector2(602, -764)
+scale = Vector2(1.79, 1.79)
+texture = ExtResource("7_s063a")
+region_enabled = true
+region_rect = Rect2(142.826, 8.81919, 25.0603, 31.1808)
+
+[node name="labios_5" type="Sprite2D" parent="labios"]
+visible = false
+position = Vector2(602.125, -763.473)
+scale = Vector2(1.66304, 1.66304)
+texture = ExtResource("7_s063a")
+region_enabled = true
+region_rect = Rect2(179.452, 8.81919, 23.9037, 31.1808)
+
+[node name="labios_6" type="Sprite2D" parent="labios"]
+visible = false
+position = Vector2(608, -764)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_s063a")
+region_enabled = true
+region_rect = Rect2(212.223, 8.81919, 29.3013, 31.1808)
+
+[node name="cejas" type="Node2D" parent="."]
+position = Vector2(43, -885)
+
+[node name="cejas_1" type="Sprite2D" parent="cejas"]
+position = Vector2(13, -24)
+scale = Vector2(2.05556, 2.05556)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(23.2782, 110.115, 71.7111, 27.7591)
+
+[node name="cejas_2" type="Sprite2D" parent="cejas"]
+visible = false
+position = Vector2(13, -24)
+scale = Vector2(2.05556, 2.05556)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(104.35, 110.115, 63.879, 27.7591)
+
+[node name="cejas_3" type="Sprite2D" parent="cejas"]
+visible = false
+position = Vector2(13, -24)
+scale = Vector2(2.05556, 2.05556)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(181.738, 110.115, 67.4545, 27.7591)
+
+[node name="cejas_4" type="Sprite2D" parent="cejas"]
+visible = false
+position = Vector2(13, -24)
+scale = Vector2(2.05556, 2.05556)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(259.464, 110.115, 69.5364, 27.7591)
+
+[node name="cejas_5" type="Sprite2D" parent="cejas"]
+visible = false
+position = Vector2(13, -24)
+scale = Vector2(2.05556, 2.05556)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(337.895, 110.115, 65.9015, 27.7591)
+
+[node name="cejas_6" type="Sprite2D" parent="cejas"]
+visible = false
+position = Vector2(13, -32)
+scale = Vector2(2.05556, 2.05556)
+texture = ExtResource("6_65mhj")
+region_enabled = true
+region_rect = Rect2(416.149, 110.115, 65.939, 27.7591)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="buttom_pelos" type="Button" parent="."]
+offset_left = 344.0
+offset_top = -1143.0
+offset_right = 517.0
+offset_bottom = -935.0
+focus_mode = 0
+icon = ExtResource("8_o02fu")
+flat = true
+
+[node name="buttom_skins" type="Button" parent="."]
+offset_left = 303.0
+offset_top = -410.0
+offset_right = 523.0
+offset_bottom = -186.0
+focus_mode = 0
+icon = ExtResource("9_ctx25")
+flat = true
+
+[node name="buttom_vestidos" type="Button" parent="."]
+offset_left = -573.0
+offset_top = -456.0
+offset_right = -292.0
+offset_bottom = -231.0
+focus_mode = 0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+action_mode = 0
+icon = ExtResource("10_xgd5y")
+flat = true
+
+[node name="buttom_medias" type="Button" parent="."]
+offset_left = -598.0
+offset_top = -262.0
+offset_right = -269.0
+offset_bottom = -23.0
+focus_mode = 0
+icon = ExtResource("11_jyamr")
+flat = true
+
+[node name="buttom_zapatos" type="Button" parent="."]
+offset_left = -542.0
+offset_top = -49.0
+offset_right = -316.0
+offset_bottom = 175.0
+focus_mode = 0
+icon = ExtResource("12_wv7hn")
+flat = true
+
+[node name="buttom_ojos" type="Button" parent="."]
+offset_left = 342.0
+offset_top = -779.0
+offset_right = 518.0
+offset_bottom = -569.0
+focus_mode = 0
+icon = ExtResource("13_bdtww")
+flat = true
+
+[node name="buttom_cejas" type="Button" parent="."]
+offset_left = 342.0
+offset_top = -954.0
+offset_right = 519.0
+offset_bottom = -759.0
+focus_mode = 0
+icon = ExtResource("14_5p7np")
+flat = true
+
+[node name="buttom_labios" type="Button" parent="."]
+offset_left = 342.0
+offset_top = -591.0
+offset_right = 516.0
+offset_bottom = -382.0
+focus_mode = 0
+icon = ExtResource("15_75kku")
+flat = true
+
+[node name="Medias" parent="." instance=ExtResource("8_bel3o")]
+visible = false
+position = Vector2(7, 903)
+
+[node name="Zapatos" parent="." instance=ExtResource("8_a33sv")]
+visible = false
+position = Vector2(7, 903)
+
+[node name="Vestidos" parent="." instance=ExtResource("4_tmn6e")]
+visible = false
+position = Vector2(7, 903)
+
+[connection signal="pressed" from="buttom_pelos" to="." method="_on_buttom_pelos_pressed"]
+[connection signal="pressed" from="buttom_skins" to="." method="_on_buttom_skins_pressed"]
+[connection signal="pressed" from="buttom_vestidos" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="buttom_medias" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="buttom_zapatos" to="." method="_on_buttom_zapatos_pressed"]
+[connection signal="pressed" from="buttom_ojos" to="." method="_on_buttom_ojos_pressed"]
+[connection signal="pressed" from="buttom_cejas" to="." method="_on_buttom_cejas_pressed"]
+[connection signal="pressed" from="buttom_labios" to="." method="_on_buttom_labios_pressed"]
+[connection signal="visibility_changed" from="Vestidos" to="." method="_on_vestidos_visibility_changed"]

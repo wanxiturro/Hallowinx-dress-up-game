@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://e5adgqpvycbq"]
+
+[ext_resource type="Script" path="res://scripts/drag_and_rope.tscn.gd" id="2_xqss6"]
+
+[node name="Sprite2D" type="Sprite2D"]
+script = ExtResource("2_xqss6")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" groups=["clothing"]]
+position = Vector2(26, 13)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

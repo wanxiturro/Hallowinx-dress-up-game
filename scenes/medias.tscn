@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://cyd5c3ltexxv3"]
+
+[ext_resource type="Texture2D" uid="uid://dyctj1mrrrasg" path="res://assets/sprites/background_level.png" id="1_28dj4"]
+[ext_resource type="PackedScene" path="res://scenes/media_1.tscn" id="2_mx837"]
+[ext_resource type="PackedScene" uid="uid://c6bnxcoeqlndc" path="res://scenes/media_2.tscn" id="3_i46ao"]
+[ext_resource type="PackedScene" uid="uid://qhjgalg3w4ua" path="res://scenes/media_3.tscn" id="4_kfgoo"]
+[ext_resource type="PackedScene" uid="uid://btdgr3x0jtcks" path="res://scenes/media_4.tscn" id="5_pdm4s"]
+[ext_resource type="PackedScene" uid="uid://d1xswk4ckcmec" path="res://scenes/media_5.tscn" id="6_ua6di"]
+
+[node name="Medias" type="Node2D"]
+
+[node name="Fondo2" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -545.0
+offset_top = -319.0
+offset_right = 532.0
+offset_bottom = 297.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_28dj4")
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_mx837")]
+position = Vector2(404, -14)
+scale = Vector2(2.153, 2.153)
+
+[node name="Sprite2D2" parent="." instance=ExtResource("3_i46ao")]
+position = Vector2(28, 220)
+scale = Vector2(2.937, 2.937)
+region_rect = Rect2(37.1, -0.199997, 146.3, 303.6)
+
+[node name="Sprite2D3" parent="." instance=ExtResource("4_kfgoo")]
+position = Vector2(-372, 202)
+scale = Vector2(2.937, 2.937)
+region_rect = Rect2(337.549, 0.699974, 154, 305.8)
+
+[node name="Sprite2D4" parent="." instance=ExtResource("5_pdm4s")]
+position = Vector2(-198, 42)
+scale = Vector2(2.153, 2.153)
+region_rect = Rect2(952.906, 13.9, 168.3, 277.2)
+
+[node name="Sprite2D5" parent="." instance=ExtResource("6_ua6di")]
+position = Vector2(262, 222)
+scale = Vector2(2.937, 2.937)

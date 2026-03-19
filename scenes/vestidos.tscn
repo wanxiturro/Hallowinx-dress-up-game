@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://cohtc0mhrlk4r"]
+
+[ext_resource type="Texture2D" uid="uid://dyctj1mrrrasg" path="res://assets/sprites/background_level.png" id="1_xhbk8"]
+[ext_resource type="PackedScene" uid="uid://c07jmoajrmugq" path="res://scenes/vestido_1.tscn" id="2_5rq8d"]
+[ext_resource type="PackedScene" uid="uid://c8gyi5tn8o0kh" path="res://scenes/vestido_2.tscn" id="3_sa2ei"]
+[ext_resource type="PackedScene" uid="uid://4xy0y0qheq87" path="res://scenes/vestido_6.tscn" id="4_p6p0r"]
+[ext_resource type="PackedScene" uid="uid://baj23jdqxwn3t" path="res://scenes/vestido_5.tscn" id="5_5qht4"]
+[ext_resource type="PackedScene" uid="uid://cn8ls17mj8o2k" path="res://scenes/vestido_4.tscn" id="6_q3txp"]
+[ext_resource type="PackedScene" uid="uid://dvrx1xqsxseke" path="res://scenes/vestido_3.tscn" id="7_auuvs"]
+
+[node name="Vestidos" type="Node2D"]
+
+[node name="Fondo2" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -545.0
+offset_top = -319.0
+offset_right = 532.0
+offset_bottom = 297.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xhbk8")
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_5rq8d")]
+position = Vector2(496, 4)
+scale = Vector2(2.153, 2.153)
+
+[node name="Sprite2D2" parent="." instance=ExtResource("3_sa2ei")]
+position = Vector2(274, 66)
+scale = Vector2(2.153, 2.153)
+
+[node name="Sprite2D5" parent="." instance=ExtResource("4_p6p0r")]
+position = Vector2(148, 96)
+scale = Vector2(2.153, 2.153)
+
+[node name="Sprite2D6" parent="." instance=ExtResource("5_5qht4")]
+position = Vector2(-180, 72)
+scale = Vector2(2.153, 2.153)
+region_rect = Rect2(1066.47, 0.835057, 261.594, 293.696)
+
+[node name="Sprite2D4" parent="." instance=ExtResource("6_q3txp")]
+position = Vector2(20, 126)
+scale = Vector2(2.153, 2.153)
+region_rect = Rect2(799.1, 5.09998, 269.5, 281.6)
+
+[node name="Sprite2D3" parent="." instance=ExtResource("7_auuvs")]
+position = Vector2(-360, 60)
+scale = Vector2(2.153, 2.153)

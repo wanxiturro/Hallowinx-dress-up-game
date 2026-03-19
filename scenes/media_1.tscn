@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpnwsuqxvetuq"]
+
+[ext_resource type="Texture2D" uid="uid://d4a0n75yxjblv" path="res://assets/sprites/medias_1.png" id="1_ls1nd"]
+[ext_resource type="Script" path="res://scripts/drag_and_rope.tscn.gd" id="1_q1q40"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_ls1nd")
+script = ExtResource("1_q1q40")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" groups=["clothing"]]
+position = Vector2(26, 13)
+polygon = PackedVector2Array(-65, -127, -52, -120, -30, -121, -11, -130, -9, -132, 5, -122, 18, -105, 22, -84, 22, -53, 13, -2, 3, 35, -5, 69, -9, 90, -6, 100, -12, 103, -22, 103, -25, 101, -26, 103, -31, 102, -36, 98, -38, 82, -53, 44, -66, -3, -73, -43, -77, -85, -78, -104)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

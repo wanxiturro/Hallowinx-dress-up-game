@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://gw0qnjfq0ivr"]
+
+[ext_resource type="Texture2D" uid="uid://mvrhbgn5kuqp" path="res://assets/sprites/background.png" id="1_3o6tc"]
+[ext_resource type="Texture2D" uid="uid://dyctj1mrrrasg" path="res://assets/sprites/background_level.png" id="2_xsb4w"]
+[ext_resource type="Texture2D" uid="uid://h6snw53oebcw" path="res://assets/sprites/skins.png" id="3_mdqvh"]
+[ext_resource type="Texture2D" uid="uid://hkm431wn65mx" path="res://assets/sprites/band_heart.png" id="4_2bl3m"]
+
+[node name="Niveles" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Fondo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -646.0
+offset_top = -1376.0
+offset_right = 622.0
+offset_bottom = 1282.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_3o6tc")
+
+[node name="Fondo2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -538.0
+offset_top = 524.0
+offset_right = 501.0
+offset_bottom = 1134.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xsb4w")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2.125, -257.149)
+scale = Vector2(2.15099, 2.15099)
+texture = ExtResource("3_mdqvh")
+hframes = 6
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -558.0
+offset_top = 1083.0
+offset_right = 536.0
+offset_bottom = 1190.0
+texture = ExtResource("4_2bl3m")
