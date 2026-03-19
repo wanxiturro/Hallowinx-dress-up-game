@@ -1,5 +1,3 @@
-# 👗 HALLOWINX DRESS-UP 🧙‍♀️
-
 <p align="center">
   <img src="assets/sprites/logo.png" alt="Hallowinx Dress-up Logo" width="200"/>
 </p>
@@ -7,6 +5,9 @@
 <p align="center">
   <b>Un juego de vestir mágico y encantador.</b>
 </p>
+
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20PC-lightgrey)
+![Flutter](https://img.shields.io/badge/Godot-4.2-blue?logo=godot)
 
 <p align="center">
   <a href="#-descripción">Descripción</a> •
