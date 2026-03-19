@@ -78,3 +78,34 @@ git clone https://github.com/tuusuario/hallowinx-dressup.git
 cd hallowinx-dressup
 # Abre el proyecto con Godot 4.2+
 ```
+
+## 🤝 Contribuir
+¿Te gustaría contribuir? [¡Revisa nuestra guía de contribución!](CONTRIBUTING.md)
+
+## 📄 **Licencia**
+
+Copyright © 2026 **Sayreth**
+
+Este proyecto está protegido bajo una licencia de **todos los derechos reservados**.
+
+Para más información, revisa el archivo [LICENSE.md](LICENSE.md).
+
+---
+
+## 💖 **Agradecimientos**
+
+- A la comunidad de **Godot Engine** por su increíble motor.
+- A todos los **beta testers** que ayudaron a mejorar el juego.
+- A **ti**, por jugar y apoyar el desarrollo independiente.
+- Y a Sayreth por la idea de juego.
+
+---
+
+<p align="center">
+  <b>¡Gracias por jugar Hallowinx Dress-up!</b><br>
+  <i>Crea, combina y expresa tu magia</i><br>
+</p>
+
+<p align="center">
+  Hecho con 💖 por wanxiturro.
+</p>
